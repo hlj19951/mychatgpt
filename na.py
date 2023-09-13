@@ -1,5 +1,9 @@
+import os
 import openai
-openai.api_key = "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"
+from dotenv import load_dotenv
+
+load_dotenv()
+openai.api_key = os.getenv("SECRECT_USEFUL_TOKEN")
 
 while True:
     txt = input("你好奇什麼呢？")
